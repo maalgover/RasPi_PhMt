@@ -21,7 +21,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(18, GPIO.OUT)
 
-filename = "/home/pi/" + batch_name
+filename = "/home/pi/" + batch_name + ".csv"
 file = open (filename, "a")
 if os.stat(filename).st_size == 0:
     file.write("Date,Time,Sensor_1\n")
